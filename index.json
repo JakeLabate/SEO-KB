@@ -1,28 +1,3 @@
 {
-  "pluginType": "JSONEditorWidget",
-  "id": "json",
-  "formDataKey": "json",
-  "value": {
-    "a": {
-      "b": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
-      ],
-      "c": {
-        "d": false
-      },
-      "e": "hiiiiiiiiiii",
-      "ol": "sdfsdgdsfg"
-    }
-  },
-  "valid": true,
-  "_desktopMarginType": "",
-  "_mobileMarginType": ""
+  "ok": "sdfd"
 }
