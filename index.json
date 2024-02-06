@@ -1,3 +1,6 @@
 {
-  "ok": "sdfd"
+  "ok": {
+    "fruit": "tomato",
+    "veggie": "idk"
+  }
 }
