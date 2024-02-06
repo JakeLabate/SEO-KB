@@ -1,1 +1,4 @@
-{"lol":"test"}
+{
+  "lol": {"ok": "sdfsdf"},
+  "test": "ok"
+}
