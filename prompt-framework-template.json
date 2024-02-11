@@ -1,0 +1,353 @@
+{
+				"type": "object",
+				"definitions": {
+					"action-types": {
+						"enumNames": [
+							"Get",
+							"Generate",
+							"List"
+						],
+						"enum": [
+							{
+								"name": "Get",
+								"value": "get"
+							},
+							{
+								"name": "Generate",
+								"value": "generate"
+							},
+							{
+								"name": "List",
+								"value": "list"
+							}
+						]
+					},
+					"agent-age": {
+						"enumNames": [
+							"Child",
+							"Teen",
+							"Adult",
+							"Elderly"
+						],
+						"enum": [
+							{
+								"name": "Child",
+								"value": "child"
+							},
+							{
+								"name": "Teen",
+								"value": "teen"
+							},
+							{
+								"name": "Adult",
+								"value": "adult"
+							},
+							{
+								"name": "Elderly",
+								"value": "elderly"
+							}
+						]
+					},
+					"agent-mood": {
+						"enumNames": [
+							"Happy",
+							"Sad",
+							"Angry",
+							"Neutral"
+						],
+						"enum": [
+							{
+								"name": "Happy",
+								"value": "happy"
+							},
+							{
+								"name": "Sad",
+								"value": "sad"
+							},
+							{
+								"name": "Angry",
+								"value": "angry"
+							},
+							{
+								"name": "Neutral",
+								"value": "neutral"
+							}
+						]
+					},
+					"response-length": {
+						"enumNames": [
+							"Word Count",
+							"Sentence Count",
+							"Paragraph Count"
+						],
+						"enum": [
+							{
+								"name": "Word Count",
+								"value": "wordCount"
+							},
+							{
+								"name": "Sentence Count",
+								"value": "sentenceCount"
+							},
+							{
+								"name": "Paragraph Count",
+								"value": "paragraphCount"
+							}
+						]
+
+					},
+					"response-complexity": {
+						"enumNames": [
+							"Grade Level",
+							"Reading Time",
+							"Vocabulary"
+						],
+						"enum": [
+							{
+								"name": "Grade Level",
+								"value": "gradeLevel"
+							},
+							{
+								"name": "Reading Time",
+								"value": "readingTime"
+							},
+							{
+								"name": "Vocabulary",
+								"value": "vocabulary"
+							}
+						]
+					},
+					"response-formats": {
+						"enumNames": [
+							"Image",
+							"HTML",
+							"Text"
+						],
+						"enum": [
+							{
+								"name": "Image",
+								"value": "image"
+							},
+							{
+								"name": "HTML",
+								"value": "html"
+							},
+							{
+								"name": "Text",
+								"value": "text"
+							}
+						]
+					},
+					"response-example-types": {
+						"enumNames": [
+							"Text",
+							"Link",
+							"Image"
+						],
+						"enum": [
+							{
+								"name": "Text",
+								"value": "text"
+							},
+							{
+								"name": "Link",
+								"value": "link"
+							},
+							{
+								"name": "Image",
+								"value": "image"
+							}
+						]
+					}
+				},
+				"properties": {
+					"user": {
+						"title": "User",
+						"description": "fghjfghjfghj",
+						"type": "object",
+						"properties": {
+							"intent": {
+								"id": "user-intent",
+								"title": "User Intent",
+								"description": "fghjfghjfghj",
+								"type": "string"
+							}
+						}
+					},
+					"agent": {
+						"title": "Agent",
+						"description": "",
+						"type": "object",
+						"properties":{
+							"age": {
+								"id": "agent-persona-age",
+								"title": "Age",
+								"description": "",
+								"$ref": "#/definitions/agent-age"
+							},
+							"mood": {
+								"id": "agent-persona-mood",
+								"title": "Mood",
+								"description": "",
+								"$ref": "#/definitions/agent-mood"
+							}
+						}
+					},
+					"action": {
+						"title": "Action",
+						"description": "",
+						"type": "object",
+						"properties": {
+							"type": {
+								"id": "action-type",
+								"title": "Action Type",
+								"description": "",
+								"$ref": "#/definitions/action-types"
+							},
+							"description": {
+								"id": "action-description",
+								"title": "Action Description",
+								"description": "",
+								"type": "string"
+							},
+							"steps": {
+								"title": "Action Steps",
+								"description": "",
+								"type": "array",
+								"items": {
+									"type": "object",
+									"properties": {
+										"name": {
+											"level": "group-array-string",
+											"id": "action-step-name",
+											"title": "Step Name",
+											"description": "",
+											"type": "string"
+										},
+										"description": {
+											"level": "group-array-string",
+											"id": "action-step-description",
+											"title": "Step Description",
+											"description": "",
+											"type": "string"
+										}
+									}
+								}
+							}
+						}
+					},
+					"response": {
+						"title": "Response Details",
+						"description": "",
+						"type": "object",
+						"properties": {
+							"name": {
+								"id": "response-name",
+								"title": "Result Name",
+								"description": "",
+								"type": "string"
+							},
+							"description": {
+								"id": "response-description",
+								"title": "Result Description",
+								"description": "",
+								"type": "string"
+							},
+							"format": {
+								"id": "response-format",
+								"title": "Response Format",
+								"description": "",
+								"$ref": "#/definitions/response-formats"
+							},
+							"length": {
+								"title": "Response Length",
+								"description": "",
+								"type": "object",
+								"properties": {
+									"type": {
+										"id": "response-length-type",
+										"title": "Length Type",
+										"description": "",
+										"$ref": "#/definitions/response-length"
+									},
+									"value-max": {
+										"id": "response-length-value-max",
+										"title": "Minimum Length",
+										"description": "",
+										"type": "number"
+									},
+									"value-min": {
+										"id": "response-length-value-min",
+										"title": "Maximum Length",
+										"description": "",
+										"type": "number"
+									}
+								}
+							},
+							"complexity": {
+								"title": "Response Complexity",
+								"description": "",
+								"type": "object",
+								"properties": {
+									"type": {
+										"id": "response-complexity-type",
+										"title": "Complexity Type",
+										"description": "",
+										"$ref": "#/definitions/response-complexity"
+									},
+									"value": {
+										"id": "response-complexity-value",
+										"title": "Length Value",
+										"description": "",
+										"type": "string"
+									}
+								}
+							},
+							"examples": {
+								"title": "Response Examples",
+								"description": "",
+								"type": "array",
+								"items": {
+									"type": "object",
+									"properties": {
+										"type": {
+											"id": "response-example-type",
+											"title": "Example Type",
+											"description": "",
+											"$ref": "#/definitions/response-example-types"
+										},
+										"value": {
+											"id": "response-example-value",
+											"title": "Example Value",
+											"description": "",
+											"type": "string"
+										}
+									}
+								}
+							},
+							"attributes": {
+								"title": "Result Attributes",
+								"description": "",
+								"type": "array",
+								"items": {
+									"type": "object",
+									"properties": {
+										"name": {
+											"id": "response-attribute-type",
+											"title": "Attribute Name",
+											"description": "",
+											"type": "string"
+										},
+										"value": {
+											"id": "response-attribute-value",
+											"title": "Attribute Value",
+											"description": "",
+											"type": "string"
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
