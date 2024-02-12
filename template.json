@@ -2,48 +2,47 @@
 	"type": "object",
 	"definitions": {
 		"action-types": {
-						{ "name": "Get", "value": "get" },
-						{ "name": "Generate", "value": "generate" },
-						{ "name": "List", "value": "list" },
-						{ "name": "Compare", "value": "compare" },
-						{ "name": "Evaluate", "value": "evaluate" },
-						{ "name": "Investigate", "value": "investigate" }
-					},
-					"agent-age": {
-						{ "name": "Child", "value": "child" },
-						{ "name": "Teen", "value": "teen" },
-						{ "name": "Young Adult", "value": "youngAdult" },
-						{ "name": "Middle Age Adult", "value": "middleAgeAdult" },
-						{ "name": "Elderly", "value": "elderly" }
-					},
-					"agent-mood": {
-						{ "name": "Happy", "value": "happy" },
-						{ "name": "Sad", "value": "sad" },
-						{ "name": "Angry", "value": "angry" },
-						{ "name": "Neutral", "value": "neutral" }
-					},
-					"response-length": {
-						{ "name": "Character Count", "value": "characterCount" },
-						{ "name": "Word Count", "value": "wordCount" },
-						{ "name": "Sentence Count", "value": "sentenceCount" },
-						{ "name": "Paragraph Count", "value": "paragraphCount" }
-					},
-					"response-complexity": {
-						{ "name": "Grade Level", "value": "gradeLevel" },
-						{ "name": "Reading Time", "value": "readingTime" },
-						{ "name": "Vocabulary", "value": "vocabulary" }
-					},
-					"response-formats": {
-						{ "name": "Image", "value": "image" },
-						{ "name": "HTML", "value": "html" },
-						{ "name": "Text", "value": "text" }
-					},
-					"response-example-types": {
-						{ "name": "Text", "value": "text" },
-						{ "name": "Link", "value": "link" },
-						{ "name": "Image", "value": "image" }
-					}
-				},
+			"Get": {},
+			"Generate": {},
+			"List": {},
+			"Compare": {},
+			"Evaluate": {},
+			"Investigate": {}
+		},
+		"agent-age": {
+			"Child": {},
+			"Teen": {},
+			"Young Adult": {},
+			"Middle Age Adult": {},
+			"Elderly": {}
+		},
+		"agent-mood": {
+			"Happy": {},
+			"Sad": {},
+			"Angry": {},
+			"Neutral": {}
+		},
+		"response-length": {
+			"Character Count": {},
+			"Word Count": {},
+			"Sentence Count": {},
+			"Paragraph Count": {},
+		},
+		"response-complexity": {
+			"Grade Level": {},
+			"Reading Time": {},
+			"Vocabulary": {}
+		},
+		"response-formats": {
+			"Image": {},
+			"Link": {},
+			"Text": {}
+		},
+		"response-example-types": {
+			"Image": {},
+			"Link": {},
+			"Text": {}
+		},
 				"properties": {
 					"user": {
 						"title": "User",
