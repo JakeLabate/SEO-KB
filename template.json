@@ -4,139 +4,58 @@
 					"action-types": {
 						"enum": [
 							{ "name": "Get", "value": "get" },
-							{
-								"name": "Generate",
-								"value": "generate"
-							},
-							{
-								"name": "List",
-								"value": "list"
-							},
-							{
-							 "name": "Compare",
-								"value": "compare"
-							},
-							{
-							 "name": "Evaluate",
-								"value": "evaluate"
-							},
-							{
-							 "name": "Investigate",
-								"value": "investigate"
-							}
+							{ "name": "Generate", "value": "generate" },
+							{ "name": "List", "value": "list" },
+							{ "name": "Compare", "value": "compare" },
+							{ "name": "Evaluate", "value": "evaluate" },
+							{ "name": "Investigate", "value": "investigate" }
 						]
 					},
 					"agent-age": {
 						"enum": [
-							{
-								"name": "Child",
-								"value": "child"
-							},
-							{
-								"name": "Teen",
-								"value": "teen"
-							},
-							{
-								"name": "Young Adult",
-								"value": "youngAdult"
-							},
-							{
-								"name": "Middle Age Adult",
-								"value": "middleAgeAdult"
-							},
-							{
-								"name": "Elderly",
-								"value": "elderly"
-							}
+							{ "name": "Child", "value": "child" },
+							{ "name": "Teen", "value": "teen" },
+							{ "name": "Young Adult", "value": "youngAdult" },
+							{ "name": "Middle Age Adult", "value": "middleAgeAdult" },
+							{ "name": "Elderly", "value": "elderly" }
 						]
 					},
 					"agent-mood": {
 						"enum": [
-							{
-								"name": "Happy",
-								"value": "happy"
-							},
-							{
-								"name": "Sad",
-								"value": "sad"
-							},
-							{
-								"name": "Angry",
-								"value": "angry"
-							},
-							{
-								"name": "Neutral",
-								"value": "neutral"
-							}
+							{ "name": "Happy", "value": "happy" },
+							{ "name": "Sad", "value": "sad" },
+							{ "name": "Angry", "value": "angry" },
+							{ "name": "Neutral", "value": "neutral" }
 						]
 					},
 					"response-length": {
 						"enum": [
-							{
-								"name": "Character Count",
-								"value": "characterCount"
-							},
-							{
-								"name": "Word Count",
-								"value": "wordCount"
-							},
-							{
-								"name": "Sentence Count",
-								"value": "sentenceCount"
-							},
-							{
-								"name": "Paragraph Count",
-								"value": "paragraphCount"
-							}
+							{ "name": "Character Count", "value": "characterCount" },
+							{ "name": "Word Count", "value": "wordCount" },
+							{ "name": "Sentence Count", "value": "sentenceCount" },
+							{ "name": "Paragraph Count", "value": "paragraphCount" }
 						]
 
 					},
 					"response-complexity": {
 						"enum": [
-							{
-								"name": "Grade Level",
-								"value": "gradeLevel"
-							},
-							{
-								"name": "Reading Time",
-								"value": "readingTime"
-							},
-							{
-								"name": "Vocabulary",
-								"value": "vocabulary"
-							}
+							{ "name": "Grade Level", "value": "gradeLevel" },
+							{ "name": "Reading Time", "value": "readingTime" },
+							{ "name": "Vocabulary", "value": "vocabulary" }
 						]
 					},
 					"response-formats": {
 						"enum": [
-							{
-								"name": "Image",
-								"value": "image"
-							},
-							{
-								"name": "HTML",
-								"value": "html"
-							},
-							{
-								"name": "Text",
-								"value": "text"
-							}
+							{ "name": "Image", "value": "image" },
+							{ "name": "HTML", "value": "html" },
+							{ "name": "Text", "value": "text" }
 						]
 					},
 					"response-example-types": {
 						"enum": [
-							{
-								"name": "Text",
-								"value": "text"
-							},
-							{
-								"name": "Link",
-								"value": "link"
-							},
-							{
-								"name": "Image",
-								"value": "image"
-							}
+							{ "name": "Text", "value": "text" },
+							{ "name": "Link", "value": "link" },
+							{ "name": "Image", "value": "image" }
 						]
 					}
 				},
