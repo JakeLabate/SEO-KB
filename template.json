@@ -28,7 +28,7 @@
 						{ "name": "Sentence Count", "value": "sentenceCount" },
 						{ "name": "Paragraph Count", "value": "paragraphCount" }
 					},
-					"response-complexity": [
+					"response-complexity": {
 						{ "name": "Grade Level", "value": "gradeLevel" },
 						{ "name": "Reading Time", "value": "readingTime" },
 						{ "name": "Vocabulary", "value": "vocabulary" }
