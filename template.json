@@ -230,7 +230,6 @@
 								"$ref": "#/definitions/action-types"
 							},
 							"description": {
-								"id": "action-description",
 								"title": "Action Description",
 								"description": "",
 								"type": "string"
@@ -243,14 +242,12 @@
 									"type": "object",
 									"properties": {
 										"name": {
-											"level": "group-array-string",
 											"id": "action-step-name",
 											"title": "Step Name",
 											"description": "",
 											"type": "string"
 										},
 										"description": {
-											"level": "group-array-string",
 											"id": "action-step-description",
 											"title": "Step Description",
 											"description": "",
