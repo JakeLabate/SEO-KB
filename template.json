@@ -32,7 +32,7 @@
 						{ "name": "Grade Level", "value": "gradeLevel" },
 						{ "name": "Reading Time", "value": "readingTime" },
 						{ "name": "Vocabulary", "value": "vocabulary" }
-						},
+					},
 					"response-formats": {
 						{ "name": "Image", "value": "image" },
 						{ "name": "HTML", "value": "html" },
