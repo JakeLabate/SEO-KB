@@ -5,7 +5,10 @@
 						"enumNames": [
 							"Get",
 							"Generate",
-							"List"
+							"List",
+							"Compare",
+							"Evaluate",
+							"Investigate"
 						],
 						"enum": [
 							{
@@ -19,6 +22,18 @@
 							{
 								"name": "List",
 								"value": "list"
+							},
+							{
+							 "name": "Compare",
+								"value": "compare"
+							},
+							{
+							 "name": "Evaluate",
+								"value": "evaluate"
+							},
+							{
+							 "name": "Investigate",
+								"value": "investigate"
 							}
 						]
 					},
@@ -26,7 +41,8 @@
 						"enumNames": [
 							"Child",
 							"Teen",
-							"Adult",
+							"Young Adult",
+							"Middle Age Adult",
 							"Elderly"
 						],
 						"enum": [
@@ -39,8 +55,12 @@
 								"value": "teen"
 							},
 							{
-								"name": "Adult",
-								"value": "adult"
+								"name": "Young Adult",
+								"value": "youngAdult"
+							},
+							{
+								"name": "Middle Age Adult",
+								"value": "middleAgeAdult"
 							},
 							{
 								"name": "Elderly",
@@ -76,11 +96,16 @@
 					},
 					"response-length": {
 						"enumNames": [
+							"Character Count",
 							"Word Count",
 							"Sentence Count",
 							"Paragraph Count"
 						],
 						"enum": [
+							{
+								"name": "Character Count",
+								"value": "characterCount"
+							},
 							{
 								"name": "Word Count",
 								"value": "wordCount"
