@@ -2,14 +2,6 @@
 				"type": "object",
 				"definitions": {
 					"action-types": {
-						"enumNames": [
-							"Get",
-							"Generate",
-							"List",
-							"Compare",
-							"Evaluate",
-							"Investigate"
-						],
 						"enum": [
 							{
 								"name": "Get",
@@ -38,13 +30,6 @@
 						]
 					},
 					"agent-age": {
-						"enumNames": [
-							"Child",
-							"Teen",
-							"Young Adult",
-							"Middle Age Adult",
-							"Elderly"
-						],
 						"enum": [
 							{
 								"name": "Child",
@@ -69,12 +54,6 @@
 						]
 					},
 					"agent-mood": {
-						"enumNames": [
-							"Happy",
-							"Sad",
-							"Angry",
-							"Neutral"
-						],
 						"enum": [
 							{
 								"name": "Happy",
@@ -95,12 +74,6 @@
 						]
 					},
 					"response-length": {
-						"enumNames": [
-							"Character Count",
-							"Word Count",
-							"Sentence Count",
-							"Paragraph Count"
-						],
 						"enum": [
 							{
 								"name": "Character Count",
@@ -122,11 +95,6 @@
 
 					},
 					"response-complexity": {
-						"enumNames": [
-							"Grade Level",
-							"Reading Time",
-							"Vocabulary"
-						],
 						"enum": [
 							{
 								"name": "Grade Level",
@@ -143,11 +111,6 @@
 						]
 					},
 					"response-formats": {
-						"enumNames": [
-							"Image",
-							"HTML",
-							"Text"
-						],
 						"enum": [
 							{
 								"name": "Image",
@@ -164,11 +127,6 @@
 						]
 					},
 					"response-example-types": {
-						"enumNames": [
-							"Text",
-							"Link",
-							"Image"
-						],
 						"enum": [
 							{
 								"name": "Text",
