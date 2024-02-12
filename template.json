@@ -4,42 +4,58 @@
 		"action-types": [
 			{
 				"Get": {
+					"alternatives": [ "Aquire", "Obtain" ],
 					"description": ""
 				}
 			},
 			{
 				"Generate": {
+					"alternatives": [ "Produce", "Conjure, Bring About" ],
 					"description": ""
-					}
+				}
 			},
 			{
 				"List": {
+					"alternatives": [ "Organize", "Assemble" ],
 					"description": ""
 				}
 			},
 			{
 				"Compare": {
+					"alternatives": ["Contrast", "Decide Between"],
 					"description": ""
 				}
 			},
 			{
 				"Evaluate": {
+					"alternatives": ["Analyize", "Understand", "Investigate"],
 					"description": ""
 				}
 			},
 			{
 				"Decide": {
+					"alternatives": ["Choose", "Select", "Determine"],
 					"description": ""
 				}
 			}
 		],
-		"agent-age": {
-			"Child": {},
-			"Teen": {},
+		"agent-age": [
+			{
+				"Child": {
+					"alternatives": ["Kid"],
+					"description": ""
+				}
+			},
+			{
+				"Teen": {
+					"alternatives": ["Youth", "Adolescent"],
+					"description": ""
+				}
+			},
 			"Young Adult": {},
 			"Middle Age Adult": {},
 			"Elderly": {}
-		},
+		],
 		"agent-mood": {
 			"Happy": {},
 			"Sad": {},
