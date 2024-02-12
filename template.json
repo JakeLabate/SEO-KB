@@ -43,7 +43,7 @@
 						{ "name": "Link", "value": "link" },
 						{ "name": "Image", "value": "image" }
 					]
-				},
+				],
 				"properties": {
 					"user": {
 						"title": "User",
