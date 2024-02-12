@@ -1,14 +1,14 @@
 {
 	"type": "object",
 	"definitions": {
-		"action-types": {
-			"Get": {},
-			"Generate": {},
-			"List": {},
-			"Compare": {},
-			"Evaluate": {},
-			"Investigate": {}
-		},
+		"action-types": [
+			{ "Get": {} },
+			{ "Generate": {} },
+			{ "List": {} },
+			{ "Compare": {} },
+			{ "Evaluate": {} },
+			{ "Investigate": {} }
+		],
 		"agent-age": {
 			"Child": {},
 			"Teen": {},
