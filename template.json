@@ -52,38 +52,125 @@
 					"description": ""
 				}
 			},
-			"Young Adult": {},
-			"Middle Age Adult": {},
-			"Elderly": {}
+			{
+				"Young Adult": {
+					
+				}
+			},
+			{
+				"Middle Age Adult": {
+					"alternatives": ["Adult"],
+					"description": ""
+				}
+			},
+			{
+				"Elderly": {
+					"alternatives": ["Old Person"],
+					"description": ""	
+				}
+			}
 		],
 		"agent-mood": {
-			"Happy": {},
-			"Sad": {},
-			"Angry": {},
-			"Neutral": {}
+			{
+				"Happy": {
+					"alternatives": ["Joyful"],
+					"description": ""	
+				}
+			},
+			{
+				"Sad": {
+					"alternatives": ["Depressed"],
+					"description": ""
+				}
+			},
+			{
+				"Angry": {
+					"alternatives": ["Irritated"],
+					"description": ""
+				}
+			},
+			{
+				"Neutral": {
+					"alternatives": ["Meloncholy", "Indifferent"],
+					"description": ""
+				}
+			}
 		},
 		"response-length": {
-			"Character Count": {},
-			"Word Count": {},
-			"Sentence Count": {},
-			"Paragraph Count": {},
+			{
+				"Character Count": {
+					"alternatives": ["Number of Letters"],
+					"description": ""
+				}
+			},
+			{
+				"Word Count": {
+
+				}
+			},
+			{
+				"Sentence Count": {
+					
+				}
+			},
+			{
+				"Paragraph Count": {
+					
+				}
+			},
 		},
 		"response-complexity": {
-			"Grade Level": {},
-			"Reading Time": {},
-			"Vocabulary": {}
+			{
+				"Grade Level": {
+					
+				}
+			},
+			{
+				"Reading Time": {
+					
+				}
+			},
+			{
+				"Vocabulary": {
+					
+				}
+			}
 		},
 		"response-formats": {
-			"Image": {},
-			"Link": {},
-			"Text": {}
+			{
+				"Image": {
+					
+				}
+			},
+			{
+				"Link": {
+					
+				}
+			},
+			{
+				"Text": {
+					
+				}
+			}
 		},
 		"response-example-types": {
-			"Image": {},
-			"Link": {},
-			"Text": {}
+			{
+				"Image": {
+					
+				}
+			},
+			{
+				"Link": {
+					
+				}
+			},
+			{
+				"Text": {
+					
+				}
+			}
 		},
-				"properties": {
+		"properties": {
 					"user": {
 						"title": "User",
 						"description": "fghjfghjfghj",
