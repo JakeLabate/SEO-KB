@@ -1,7 +1,7 @@
 {
 	"type": "object",
 				"definitions": [
-					"action-types": {
+					"action-types": [
 						{ "name": "Get", "value": "get" },
 						{ "name": "Generate", "value": "generate" },
 						{ "name": "List", "value": "list" },
