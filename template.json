@@ -1,12 +1,9 @@
 {
-				"type": "object",
+	"type": "object",
 				"definitions": {
 					"action-types": {
 						"enum": [
-							{
-								"name": "Get",
-								"value": "get"
-							},
+							{ "name": "Get", "value": "get" },
 							{
 								"name": "Generate",
 								"value": "generate"
