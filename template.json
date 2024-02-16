@@ -1,6 +1,26 @@
 {
   "type": "object",
   "definitions": {
+    "enforcement-level": [
+      {
+        "Optional": {
+          "alternatives": [],
+          "description": ""
+        }
+      },
+      {
+        "Recommended": {
+          "alternatives": [],
+          "description": ""
+        }
+      },
+      {
+        "Mandatory": {
+          "alternatives": [],
+          "description": ""
+        }
+      }
+    ],
     "action-types": [
       {
         "Get": {
@@ -208,7 +228,21 @@
           "id": "agent-persona-age",
           "title": "Age",
           "description": "",
-          "$ref": "#/definitions/agent-age"
+          "type": "object",
+          "properties": {
+            "age-value": {
+              "id": "agent-persona-age-value"
+              "title": "Age",
+              "description": "",
+              "$ref": "#/definitions/agent-age"
+            },
+            "enforcement-level": {
+              "id": "agent-persona-age-enforcement-level"
+              "title": "Age",
+              "description": "",
+              "$ref": "#/definitions/enforcement-level"
+            }
+          }
         },
         "mood": {
           "id": "agent-persona-mood",
