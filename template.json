@@ -1,400 +1,414 @@
 {
-	"type": "object",
-	"definitions": {
-		"action-types": [
-			{
-				"Get": {
-					"alternatives": [ "Aquire", "Obtain" ],
-					"description": ""
-				}
-			},
-			{
-				"Generate": {
-					"alternatives": [ "Produce", "Conjure, Bring About" ],
-					"description": ""
-				}
-			},
-			{
-				"List": {
-					"alternatives": [ "Organize", "Assemble" ],
-					"description": ""
-				}
-			},
-			{
-				"Compare": {
-					"alternatives": ["Contrast", "Decide Between"],
-					"description": ""
-				}
-			},
-			{
-				"Evaluate": {
-					"alternatives": ["Analyize", "Understand", "Investigate"],
-					"description": ""
-				}
-			},
-			{
-				"Decide": {
-					"alternatives": ["Choose", "Select", "Determine"],
-					"description": ""
-				}
-			}
-		],
-		"agent-age": [
-			{
-				"Child": {
-					"alternatives": ["Kid"],
-					"description": ""
-				}
-			},
-			{
-				"Teen": {
-					"alternatives": ["Youth", "Adolescent"],
-					"description": ""
-				}
-			},
-			{
-				"Young Adult": {
-					
-				}
-			},
-			{
-				"Middle Age Adult": {
-					"alternatives": ["Adult"],
-					"description": ""
-				}
-			},
-			{
-				"Elderly": {
-					"alternatives": ["Old Person"],
-					"description": ""	
-				}
-			}
-		],
-		"agent-mood": [
-			{
-				"Happy": {
-					"alternatives": ["Joyful"],
-					"description": ""	
-				}
-			},
-			{
-				"Sad": {
-					"alternatives": ["Depressed"],
-					"description": ""
-				}
-			},
-			{
-				"Angry": {
-					"alternatives": ["Irritated"],
-					"description": ""
-				}
-			},
-			{
-				"Neutral": {
-					"alternatives": ["Meloncholy", "Indifferent"],
-					"description": ""
-				}
-			}
-		],
-		"response-length": [
-			{
-				"Character Count": {
-					"alternatives": ["Number of Letters"],
-					"description": ""
-				}
-			},
-			{
-				"Word Count": {
-
-				}
-			},
-			{
-				"Sentence Count": {
-					
-				}
-			},
-			{
-				"Paragraph Count": {
-					
-				}
-			},
-		],
-		"response-complexity": [
-			{
-				"Grade Level": {
-					
-				}
-			},
-			{
-				"Reading Time": {
-					
-				}
-			},
-			{
-				"Vocabulary": {
-					
-				}
-			}
-		],
-		"response-formats": [
-			{
-				"Image": {
-					
-				}
-			},
-			{
-				"Link": {
-					
-				}
-			},
-			{
-				"Text": {
-					
-				}
-			}
-		],
-		"response-example-types": [
-			{
-				"Image": {
-					
-				}
-			},
-			{
-				"Link": {
-					
-				}
-			},
-			{
-				"Text": {
-					
-				}
-			}
-		],
-	}
-		"properties": {
-					"user": {
-						"title": "User",
-						"description": "fghjfghjfghj",
-						"type": "object",
-						"properties": {
-							"intent": {
-								"id": "user-intent",
-								"title": "User Intent",
-								"description": "fghjfghjfghj",
-								"type": "string"
-							}
-						}
-					},
-					"agent": {
-						"title": "Agent",
-						"description": "",
-						"type": "object",
-						"properties":{
-							"age": {
-								"id": "agent-persona-age",
-								"title": "Age",
-								"description": "",
-								"$ref": "#/definitions/agent-age"
-							},
-							"mood": {
-								"id": "agent-persona-mood",
-								"title": "Mood",
-								"description": "",
-								"$ref": "#/definitions/agent-mood"
-							}
-						}
-					},
-					"action": {
-						"title": "Action",
-						"description": "",
-						"type": "object",
-						"properties": {
-							"type": {
-								"id": "action-type",
-								"title": "Action Type",
-								"description": "",
-								"$ref": "#/definitions/action-types"
-							},
-							"description": {
-								"title": "Action Description",
-								"description": "",
-								"type": "string"
-							},
-							"steps": {
-								"title": "Action Steps",
-								"description": "",
-								"type": "array",
-								"items": {
-									"type": "object",
-									"properties": {
-										"name": {
-											"id": "action-step-name",
-											"title": "Step Name",
-											"description": "",
-											"type": "string"
-										},
-										"description": {
-											"id": "action-step-description",
-											"title": "Step Description",
-											"description": "",
-											"type": "string"
-										}
-									}
-								}
-							}
-						}
-					},
-					"response": {
-						"title": "Response Details",
-						"description": "",
-						"type": "object",
-						"properties": {
-							"name": {
-								"id": "response-name",
-								"title": "Result Name",
-								"description": "",
-								"type": "string"
-							},
-							"description": {
-								"id": "response-description",
-								"title": "Result Description",
-								"description": "",
-								"type": "string"
-							},
-							"format": {
-								"id": "response-format",
-								"title": "Response Format",
-								"description": "",
-								"$ref": "#/definitions/response-formats"
-							},
-							"length": {
-								"title": "Response Length",
-								"description": "",
-								"type": "object",
-								"properties": {
-									"type": {
-										"id": "response-length-type",
-										"title": "Length Type",
-										"description": "",
-										"$ref": "#/definitions/response-length"
-									},
-									"value-max": {
-										"id": "response-length-value-max",
-										"title": "Minimum Length",
-										"description": "",
-										"type": "number"
-									},
-									"value-min": {
-										"id": "response-length-value-min",
-										"title": "Maximum Length",
-										"description": "",
-										"type": "number"
-									}
-								}
-							},
-							"complexity": {
-								"title": "Response Complexity",
-								"description": "",
-								"type": "object",
-								"properties": {
-									"type": {
-										"id": "response-complexity-type",
-										"title": "Complexity Type",
-										"description": "",
-										"$ref": "#/definitions/response-complexity"
-									},
-									"value": {
-										"id": "response-complexity-value",
-										"title": "Length Value",
-										"description": "",
-										"type": "string"
-									}
-								}
-							},
-							"examples": {
-								"title": "Response Examples",
-								"description": "",
-								"type": "array",
-								"items": {
-									"type": "object",
-									"properties": {
-										"type": {
-											"id": "response-example-type",
-											"title": "Example Type",
-											"description": "",
-											"$ref": "#/definitions/response-example-types"
-										},
-										"value": {
-											"id": "response-example-value",
-											"title": "Example Value",
-											"description": "",
-											"type": "string"
-										}
-									}
-								}
-							},
-							"attributes": {
-								"title": "Result Attributes",
-								"description": "",
-								"type": "array",
-								"items": {
-									"type": "object",
-									"properties": {
-										"name": {
-											"id": "response-attribute-type",
-											"title": "Attribute Name",
-											"description": "",
-											"type": "string"
-										},
-										"value": {
-											"id": "response-attribute-value",
-											"title": "Attribute Value",
-											"description": "",
-											"type": "string"
-										}
-									}
-								}
-							},
-							"breakdown": {
-								"title": "Result Breakdown",
-								"description": "",
-								"type": "array",
-								"items": {
-									"type": "object",
-									"properties": {
-										"section-name": {
-											"id": "response-breakdown-section-name",
-											"title": "Section Name",
-											"description": "",
-											"type": "string"
-										},
-										"section-description": {
-											"id": "response-breakdown-section-description",
-											"title": "Section Description",
-											"description": "",
-											"type": "string"
-										},
-										"section-details": {
-											"id": "response-breakdown-section-details",
-											"title": "Section Fescription",
-											"description": "",
-											"type": "array",
-											"items": {
-												"type": "object",
-												"properties": {
-													"sample-1": {
-														"id": "response-breakdown-section-sample-1",
-														"title": "Sample 1",
-														"description": "",
-														"type": "string"
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
+  "type": "object",
+  "definitions": {
+    "action-types": [
+      {
+        "Get": {
+          "alternatives": [
+            "Aquire",
+            "Obtain"
+          ],
+          "description": ""
+        }
+      },
+      {
+        "Generate": {
+          "alternatives": [
+            "Produce",
+            "Conjure, Bring About"
+          ],
+          "description": ""
+        }
+      },
+      {
+        "List": {
+          "alternatives": [
+            "Organize",
+            "Assemble"
+          ],
+          "description": ""
+        }
+      },
+      {
+        "Compare": {
+          "alternatives": [
+            "Contrast",
+            "Decide Between"
+          ],
+          "description": ""
+        }
+      },
+      {
+        "Evaluate": {
+          "alternatives": [
+            "Analyize",
+            "Understand",
+            "Investigate"
+          ],
+          "description": ""
+        }
+      },
+      {
+        "Decide": {
+          "alternatives": [
+            "Choose",
+            "Select",
+            "Determine"
+          ],
+          "description": ""
+        }
+      }
+    ],
+    "agent-age": [
+      {
+        "Child": {
+          "alternatives": [
+            "Kid"
+          ],
+          "description": ""
+        }
+      },
+      {
+        "Teen": {
+          "alternatives": [
+            "Youth",
+            "Adolescent"
+          ],
+          "description": ""
+        }
+      },
+      {
+        "Young Adult": {}
+      },
+      {
+        "Middle Age Adult": {
+          "alternatives": [
+            "Adult"
+          ],
+          "description": ""
+        }
+      },
+      {
+        "Elderly": {
+          "alternatives": [
+            "Old Person"
+          ],
+          "description": ""
+        }
+      }
+    ],
+    "agent-mood": [
+      {
+        "Happy": {
+          "alternatives": [
+            "Joyful"
+          ],
+          "description": ""
+        }
+      },
+      {
+        "Sad": {
+          "alternatives": [
+            "Depressed"
+          ],
+          "description": ""
+        }
+      },
+      {
+        "Angry": {
+          "alternatives": [
+            "Irritated"
+          ],
+          "description": ""
+        }
+      },
+      {
+        "Neutral": {
+          "alternatives": [
+            "Meloncholy",
+            "Indifferent"
+          ],
+          "description": ""
+        }
+      }
+    ],
+    "response-length": [
+      {
+        "Character Count": {
+          "alternatives": [
+            "Number of Letters"
+          ],
+          "description": ""
+        }
+      },
+      {
+        "Word Count": {}
+      },
+      {
+        "Sentence Count": {}
+      },
+      {
+        "Paragraph Count": {}
+      }
+    ],
+    "response-complexity": [
+      {
+        "Grade Level": {}
+      },
+      {
+        "Reading Time": {}
+      },
+      {
+        "Vocabulary": {}
+      }
+    ],
+    "response-formats": [
+      {
+        "Image": {}
+      },
+      {
+        "Link": {}
+      },
+      {
+        "Text": {}
+      }
+    ],
+    "response-example-types": [
+      {
+        "Image": {}
+      },
+      {
+        "Link": {}
+      },
+      {
+        "Text": {}
+      }
+    ]
+  },
+  "properties": {
+    "user": {
+      "title": "User",
+      "description": "fghjfghjfghj",
+      "type": "object",
+      "properties": {
+        "intent": {
+          "id": "user-intent",
+          "title": "User Intent",
+          "description": "fghjfghjfghj",
+          "type": "string"
+        }
+      }
+    },
+    "agent": {
+      "title": "Agent",
+      "description": "",
+      "type": "object",
+      "properties": {
+        "age": {
+          "id": "agent-persona-age",
+          "title": "Age",
+          "description": "",
+          "$ref": "#/definitions/agent-age"
+        },
+        "mood": {
+          "id": "agent-persona-mood",
+          "title": "Mood",
+          "description": "",
+          "$ref": "#/definitions/agent-mood"
+        }
+      }
+    },
+    "action": {
+      "title": "Action",
+      "description": "",
+      "type": "object",
+      "properties": {
+        "type": {
+          "id": "action-type",
+          "title": "Action Type",
+          "description": "",
+          "$ref": "#/definitions/action-types"
+        },
+        "description": {
+          "title": "Action Description",
+          "description": "",
+          "type": "string"
+        },
+        "steps": {
+          "title": "Action Steps",
+          "description": "",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "id": "action-step-name",
+                "title": "Step Name",
+                "description": "",
+                "type": "string"
+              },
+              "description": {
+                "id": "action-step-description",
+                "title": "Step Description",
+                "description": "",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "response": {
+      "title": "Response Details",
+      "description": "",
+      "type": "object",
+      "properties": {
+        "name": {
+          "id": "response-name",
+          "title": "Result Name",
+          "description": "",
+          "type": "string"
+        },
+        "description": {
+          "id": "response-description",
+          "title": "Result Description",
+          "description": "",
+          "type": "string"
+        },
+        "format": {
+          "id": "response-format",
+          "title": "Response Format",
+          "description": "",
+          "$ref": "#/definitions/response-formats"
+        },
+        "length": {
+          "title": "Response Length",
+          "description": "",
+          "type": "object",
+          "properties": {
+            "type": {
+              "id": "response-length-type",
+              "title": "Length Type",
+              "description": "",
+              "$ref": "#/definitions/response-length"
+            },
+            "value-max": {
+              "id": "response-length-value-max",
+              "title": "Minimum Length",
+              "description": "",
+              "type": "number"
+            },
+            "value-min": {
+              "id": "response-length-value-min",
+              "title": "Maximum Length",
+              "description": "",
+              "type": "number"
+            }
+          }
+        },
+        "complexity": {
+          "title": "Response Complexity",
+          "description": "",
+          "type": "object",
+          "properties": {
+            "type": {
+              "id": "response-complexity-type",
+              "title": "Complexity Type",
+              "description": "",
+              "$ref": "#/definitions/response-complexity"
+            },
+            "value": {
+              "id": "response-complexity-value",
+              "title": "Length Value",
+              "description": "",
+              "type": "string"
+            }
+          }
+        },
+        "examples": {
+          "title": "Response Examples",
+          "description": "",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "id": "response-example-type",
+                "title": "Example Type",
+                "description": "",
+                "$ref": "#/definitions/response-example-types"
+              },
+              "value": {
+                "id": "response-example-value",
+                "title": "Example Value",
+                "description": "",
+                "type": "string"
+              }
+            }
+          }
+        },
+        "attributes": {
+          "title": "Result Attributes",
+          "description": "",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "id": "response-attribute-type",
+                "title": "Attribute Name",
+                "description": "",
+                "type": "string"
+              },
+              "value": {
+                "id": "response-attribute-value",
+                "title": "Attribute Value",
+                "description": "",
+                "type": "string"
+              }
+            }
+          }
+        },
+        "breakdown": {
+          "title": "Result Breakdown",
+          "description": "",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "section-name": {
+                "id": "response-breakdown-section-name",
+                "title": "Section Name",
+                "description": "",
+                "type": "string"
+              },
+              "section-description": {
+                "id": "response-breakdown-section-description",
+                "title": "Section Description",
+                "description": "",
+                "type": "string"
+              },
+              "section-details": {
+                "id": "response-breakdown-section-details",
+                "title": "Section Fescription",
+                "description": "",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "sample-1": {
+                      "id": "response-breakdown-section-sample-1",
+                      "title": "Sample 1",
+                      "description": "",
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
