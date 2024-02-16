@@ -390,7 +390,7 @@
               },
               "section-details": {
                 "id": "response-breakdown-section-details",
-                "title": "Section Fescription",
+                "title": "Section Description",
                 "description": "",
                 "type": "array",
                 "items": {
