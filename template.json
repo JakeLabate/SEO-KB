@@ -231,13 +231,13 @@
           "type": "object",
           "properties": {
             "age-value": {
-              "id": "agent-persona-age-value"
+              "id": "agent-persona-age-value",
               "title": "Age",
               "description": "",
               "$ref": "#/definitions/agent-age"
             },
             "enforcement-level": {
-              "id": "agent-persona-age-enforcement-level"
+              "id": "agent-persona-age-enforcement-level",
               "title": "Age",
               "description": "",
               "$ref": "#/definitions/enforcement-level"
