@@ -353,10 +353,47 @@
 										}
 									}
 								}
+							},
+							"breakdown": {
+								"title": "Result Breakdown",
+								"description": "",
+								"type": "array",
+								"items": {
+									"type": "object",
+									"properties": {
+										"section-name": {
+											"id": "response-breakdown-section-name",
+											"title": "Section Name",
+											"description": "",
+											"type": "string"
+										},
+										"section-description": {
+											"id": "response-breakdown-section-description",
+											"title": "Section Description",
+											"description": "",
+											"type": "string"
+										},
+										"section-details": {
+											"id": "response-breakdown-section-details",
+											"title": "Section Fescription",
+											"description": "",
+											"type": "array",
+											"items": {
+												"type": "object",
+												"properties": {
+													"sample-1": {
+														"id": "response-breakdown-section-sample-1",
+														"title": "Sample 1",
+														"description": "",
+														"type": "string"
+													}
+												}
+											}
+										}
+									}
+								}
 							}
 						}
 					}
 				}
 			}
-
-
