@@ -390,7 +390,7 @@
               },
               "section-details": {
                 "id": "response-breakdown-section-details",
-                "title": "Section Description",
+                "title": "Section Details",
                 "description": "",
                 "type": "array",
                 "items": {
