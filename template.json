@@ -70,7 +70,7 @@
 				}
 			}
 		],
-		"agent-mood": {
+		"agent-mood": [
 			{
 				"Happy": {
 					"alternatives": ["Joyful"],
@@ -95,8 +95,8 @@
 					"description": ""
 				}
 			}
-		},
-		"response-length": {
+		],
+		"response-length": [
 			{
 				"Character Count": {
 					"alternatives": ["Number of Letters"],
@@ -118,8 +118,8 @@
 					
 				}
 			},
-		},
-		"response-complexity": {
+		],
+		"response-complexity": [
 			{
 				"Grade Level": {
 					
@@ -135,8 +135,8 @@
 					
 				}
 			}
-		},
-		"response-formats": {
+		],
+		"response-formats": [
 			{
 				"Image": {
 					
@@ -152,8 +152,8 @@
 					
 				}
 			}
-		},
-		"response-example-types": {
+		],
+		"response-example-types": [
 			{
 				"Image": {
 					
@@ -169,7 +169,7 @@
 					
 				}
 			}
-		},
+		],
 		"properties": {
 					"user": {
 						"title": "User",
